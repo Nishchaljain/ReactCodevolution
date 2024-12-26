@@ -21,6 +21,6 @@ createRoot(document.getElementById("root")).render(
     {/* <ParentComponent /> */}
     {/* <UserGreeting /> */}
     {/* <NameList /> */}
-    <StyleSheets />
+    <StyleSheets primary={true} />
   </StrictMode>
 );
