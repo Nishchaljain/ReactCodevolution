@@ -1,7 +1,13 @@
 import React from "react";
 import Person from "./Person";
 
+// When to use index as key:
+// 1. When the items in your list do not have a unique id
+// 2. The list is a static list and will not change
+// 3. The list will never be reordered or filtered
+
 const NameList = () => {
+  const names = ["Nishchal", "Divya", "Samriddhi", "Ridit"];
   const persons = [
     {
       id: 1,
@@ -28,10 +34,13 @@ const NameList = () => {
       skill: "Next",
     },
   ];
-  const personList = persons.map((person) => (
-    <Person key={person.id} person={person} />
+  const nameList = names.map((name, index) => (
+    <h2 key={index}>
+      {index}
+      {name}
+    </h2>
   ));
-  return <div> {personList}</div>;
+  return <div> {nameList}</div>;
 };
 
 export default NameList;
