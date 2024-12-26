@@ -9,6 +9,7 @@ import ParentComponent from "./components/ParentComponent.jsx";
 import UserGreeting from "./components/UserGreeting.jsx";
 import NameList from "./components/NameList.jsx";
 import StyleSheets from "./components/StyleSheets.jsx";
+import Inline from "./components/Inline.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -21,6 +22,7 @@ createRoot(document.getElementById("root")).render(
     {/* <ParentComponent /> */}
     {/* <UserGreeting /> */}
     {/* <NameList /> */}
-    <StyleSheets primary={true} />
+    {/* <StyleSheets primary={true} /> */}
+    <Inline />
   </StrictMode>
 );
