@@ -7,6 +7,7 @@ import { Counter } from "./components/Counter.jsx";
 import { FunctionClick } from "./components/FunctionClick.jsx";
 import ParentComponent from "./components/ParentComponent.jsx";
 import UserGreeting from "./components/UserGreeting.jsx";
+import NameList from "./components/NameList.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")).render(
     {/* <Counter /> */}
     {/* <FunctionClick /> */}
     {/* <ParentComponent /> */}
-    <UserGreeting />
+    {/* <UserGreeting /> */}
+    <NameList />
   </StrictMode>
 );
