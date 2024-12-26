@@ -4,13 +4,15 @@ import "./index.css";
 import App from "./App.jsx";
 import Greet from "./components/Greet.jsx";
 import { Counter } from "./components/Counter.jsx";
+import { FunctionClick } from "./components/FunctionClick.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Greet name="Nishchal" age="37" gender="Male">
+    {/* <Greet name="Nishchal" age="37" gender="Male">
       This is children prop
     </Greet>
-    <Greet name="Divya" age="33" gender="Female" />
+    <Greet name="Divya" age="33" gender="Female" /> */}
     {/* <Counter /> */}
+    <FunctionClick />
   </StrictMode>
 );
