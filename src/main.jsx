@@ -6,6 +6,7 @@ import Greet from "./components/Greet.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Greet />
+    <Greet name="Nishchal" age="37" gender="Male" />
+    <Greet name="Divya" age="33" gender="Female" />
   </StrictMode>
 );
