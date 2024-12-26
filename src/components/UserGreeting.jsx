@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 
 const UserGreeting = () => {
-  const [IsloggedIn, setIsLoggedIn] = useState(true);
+  const [IsloggedIn, setIsLoggedIn] = useState(false);
+  //   if (IsloggedIn) {
+  //     return <div>Welcome Nishchal</div>;
+  //   } else {
+  //     return <div>Welcome Guest</div>;
+  //   }
+  let message;
   if (IsloggedIn) {
-    return <div>Welcome Nishchal</div>;
+    message = <div>Welcome Nishchal</div>;
   } else {
-    return <div>Welcome Guest</div>;
+    message = <div>Welcome Guest</div>;
   }
+  return <div>{message}</div>;
 };
 
 export default UserGreeting;
