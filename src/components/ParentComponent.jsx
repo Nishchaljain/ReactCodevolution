@@ -2,8 +2,8 @@ import React from "react";
 import ChildComponent from "./ChildComponent";
 
 const ParentComponent = () => {
-  const greetParent = () => {
-    alert("Hello Parent");
+  const greetParent = (childName) => {
+    alert(`Hello ${childName}`);
   };
   return (
     <div>
