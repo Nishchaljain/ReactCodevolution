@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import Greet from "./components/Greet.jsx";
 import { Counter } from "./components/Counter.jsx";
 import { FunctionClick } from "./components/FunctionClick.jsx";
+import ParentComponent from "./components/ParentComponent.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")).render(
     </Greet>
     <Greet name="Divya" age="33" gender="Female" /> */}
     {/* <Counter /> */}
-    <FunctionClick />
+    {/* <FunctionClick /> */}
+    <ParentComponent />
   </StrictMode>
 );
