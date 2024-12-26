@@ -10,6 +10,8 @@ import UserGreeting from "./components/UserGreeting.jsx";
 import NameList from "./components/NameList.jsx";
 import StyleSheets from "./components/StyleSheets.jsx";
 import Inline from "./components/Inline.jsx";
+import "./App.css";
+import styles from "./App.module.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -23,6 +25,11 @@ createRoot(document.getElementById("root")).render(
     {/* <UserGreeting /> */}
     {/* <NameList /> */}
     {/* <StyleSheets primary={true} /> */}
+
+    <div style={{ textAlign: "center" }}>
+      <h1 className="error">Error</h1>
+      <h1 className={styles.success}>Success</h1>
+    </div>
     <Inline />
   </StrictMode>
 );
