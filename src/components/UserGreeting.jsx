@@ -14,7 +14,8 @@ const UserGreeting = () => {
   //     message = <div>Welcome Guest</div>;
   //   }
   //   return <div>{message}</div>;
-  return IsloggedIn ? <div>Welcome Nishchal</div> : <div>Welcome Guest</div>;
+  //   return IsloggedIn ? <div>Welcome Nishchal</div> : <div>Welcome Guest</div>;
+  return IsloggedIn && <div>Welcome Nishchal</div>;
 };
 
 export default UserGreeting;
