@@ -7,6 +7,7 @@ const Greet = (props) => {
         Hello, {props.name}, your age is {props.age} and your gender is{" "}
         {props.gender}
       </h1>
+      {props.children}
     </div>
   );
 };

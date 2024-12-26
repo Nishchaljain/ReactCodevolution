@@ -6,7 +6,9 @@ import Greet from "./components/Greet.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Greet name="Nishchal" age="37" gender="Male" />
+    <Greet name="Nishchal" age="37" gender="Male">
+      This is children prop
+    </Greet>
     <Greet name="Divya" age="33" gender="Female" />
   </StrictMode>
 );
